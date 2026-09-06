@@ -1,0 +1,154 @@
+body{
+  background-color:slategray;
+}
+
+h2{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+h1{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+}
+
+p{
+  font-family:Arial, Helvetica, sans-serif
+}
+
+#tool_wrapper{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 100%;
+}
+
+#control_panel {
+  width: 15%;
+}
+
+#draw_panel_wrapper {
+  border: 1px solid rgb(61, 67, 72);
+  width: 80%;
+  height: 90vh;
+  position: relative;
+}
+
+canvas#draw_panel {
+  z-index: 1;
+  background-color: white
+
+}
+
+#tool_wrapper canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+button, input[type=file] {
+  all: unset;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: black;
+  background-color: #4EB5F1;
+  text-align: center;
+  transition: all 0.2s;
+}
+.btn:hover {
+  background-color: #4095C6;
+  cursor: pointer;
+}
+@media all and (max-width: 30em) {
+  .btn {
+    display: block;
+    margin: 0.2em auto;
+  }
+}
+.btn-danger {
+  background-color: rgb(101, 101, 103);
+}
+.btn-danger:hover {
+  background-color: rgb(206, 207, 208);
+}
+
+#control_panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.control_panel_section {
+  margin: 1em 0;
+  border-bottom: 1px dashed rgb(173, 222, 248);
+}
+
+.control_option {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+}
+#tools .control_option {
+  flex-direction: row;
+}
+
+#tools .control_option {
+  flex-direction: row;
+}
+
+.control_option select, .control_option input, .control_option button {
+  width: 100%;
+  line-height: 1.5;
+  font-size: 110%;
+  margin: 0.2em auto;
+}
+.btn.tool-btn {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgb(27 31 35 / 4%) 0 1px 0, rgb(255 255 255 / 25%) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 2rem;
+  font-weight: 500;
+  list-style: none;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+  max-width: 1.5em;
+  padding: 0;
+}
+.btn.tool-btn:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+.btn.tool-btn[data-active="true"] {
+  border: 2px solid black;
+}
+.btn.tool-btn .hand_pointer {
+  transform: rotate(-0.125turn);
+}
+.btn.tool-btn .erase_rect {
+  transform: rotate(-0.125turn);
+}

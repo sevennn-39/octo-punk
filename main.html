@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Purikura!</Title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <h1>Purikura Time~! </h1>
+    </body>
+  <div id="tool_wrapper">
+      <div id="control_panel">
+          <div class="control_panel_section">
+          <h3>Background</h3>
+          <div class="control_option">
+            <label>
+              <div>Select a background image:</div>
+              <input type="file" id="image_upload" accept="image/*">
+            </label>
+          </div>
+        </div>
+
+        <div class="control_panel_section">
+          <h3>Line styles</h3>
+          <div class="control_option">
+            <label>
+              <div>Line width:</div>
+              <select name="line_width" id="line_width">
+                <option value="1">Thin (default)</option>
+                <option value="2">Normal</option>
+                <option value="5">Thick</option>
+                <option value="10">Very thick</option>
+                <option value="20">Extremely thick</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="control_option">
+            <label>
+              <div>Line colour:</div>
+              <select name="line_colour" id="line_colour">
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="red">Red</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="purple">Purple</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div id="tools" class="control_panel_section">
+          <h3>Tools</h3>
+          <div class="control_option">
+            <button class="btn tool-btn" id="draw_tool_btn" data-active="false">&#x270E;</button>
+            <button class="btn tool-btn" id="erase_tool_btn" data-active="false"><div class="erase_rect">&#x25AD;</div></button>
+          </div>
+        </div>
+
+        <div class="control_panel_section">
+          <div class="control_option">
+            <button class="btn btn-danger" id="reset">Clear</button>
+          </div>
+        </div>
+      </div>
+      <div id="draw_panel_wrapper">
+        <canvas id="draw_panel"></canvas>
+      </div>
+    </div>
+    <script src="javascripts/page.js"></script>
+    <script src="javascripts/pencil.js"></script>
+    <script src="javascripts/eraser.js"></script>
+    
+        <h2>What is Purikura?</h2>
+    <p>Purikura are Japanese photo booths that allow you to take photos, then edit and decorate them! (the name comes from 'print club') This doesn't work quite the same, but who doesn't like making their art look pretty? Not me!</p>
+<div></div>
+    <h5>Also, all drag-and-drop assets were made by yours truly!</h5>
+    </html>

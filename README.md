@@ -1,2 +1,4 @@
 # octo-punk
-My project for Wrangler, a Hack Club YSWS!
+
+A website for making + decorating art, inspired by Japanese Purikura booths!
+
