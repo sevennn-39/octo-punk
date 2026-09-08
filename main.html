@@ -5,27 +5,15 @@
         <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
-        <h1>Purikura Time~! </h1>
-    </body>
-  <div id="tool_wrapper">
+<div id="tool_wrapper">
       <div id="control_panel">
-          <div class="control_panel_section">
-          <h3>Background</h3>
-          <div class="control_option">
-            <label>
-              <div>Select a background image:</div>
-              <input type="file" id="image_upload" accept="image/*">
-            </label>
-          </div>
-        </div>
-
         <div class="control_panel_section">
           <h3>Line styles</h3>
           <div class="control_option">
             <label>
               <div>Line width:</div>
               <select name="line_width" id="line_width">
-                <option value="1">Thin (default)</option>
+                <option value="1">Thin</option>
                 <option value="2">Normal</option>
                 <option value="5">Thick</option>
                 <option value="10">Very thick</option>
@@ -40,6 +28,7 @@
               <select name="line_colour" id="line_colour">
                 <option value="black">Black</option>
                 <option value="white">White</option>
+                <option value="brown">Brown</option>
                 <option value="red">Red</option>
                 <option value="orange">Orange</option>
                 <option value="yellow">Yellow</option>
@@ -72,9 +61,20 @@
     <script src="javascripts/page.js"></script>
     <script src="javascripts/pencil.js"></script>
     <script src="javascripts/eraser.js"></script>
+    <script src="javascripts/drag.js"></script>
+    <script src="javascripts/drop.js"></script>
+
+    <h2>Drag-and-drop to decorate your art!</h2>
+        <div id = "special">
+        <img src = images/squiggle.png draggable = "true" id = "EVIL">
+        <img src = images/bam1.png draggable = "true" id = "EVIL">
+        <img src = images/bam2.png draggable = "true" id = "EVIL">
+        <img src = images/star.png draggable = "true" id = "EVIL">
+        </div>
     
         <h2>What is Purikura?</h2>
     <p>Purikura are Japanese photo booths that allow you to take photos, then edit and decorate them! (the name comes from 'print club') This doesn't work quite the same, but who doesn't like making their art look pretty? Not me!</p>
 <div></div>
-    <h5>Also, all drag-and-drop assets were made by yours truly!</h5>
+    <h5>Also, all drag-and-drop assets were made by yours truly (sev) on various art programs (drawing w/ a mouse is pain)!</h5>
+    </body>
     </html>
